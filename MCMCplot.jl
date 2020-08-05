@@ -1,6 +1,5 @@
+#include("MCMCplot.jl"); traceplot("MCMC_samples_residual_variance.txt");
 using DelimitedFiles,Statistics,Plots,Plots.PlotMeasures,StatsPlots
-
-#file = "MCMC_samples_residual_variance.txt"
 
 function traceplot(file;header=true,separator=',',backend="pyplot",nplots=4)
     #catch errors when no backends are installed
